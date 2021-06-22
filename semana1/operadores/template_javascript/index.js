@@ -239,8 +239,74 @@ valorAPagar = consumoEmQWH * valorQWH
 let valorComDesconto = valorAPagar - valorAPagar * desconto15
 console.log("Aplicando o valor de 15% de desconto, sua conta passa a valer R$" + valorComDesconto)
 
+/*3. Um grande problema que o mundo tem atualmente é a quantidade de unidades que existem para representar a mesma coisa. Por exemplo, para representar a Massa de um corpo, podemos usar quilograma (kg), onça (oz) e até libra (lb). Para representar Distâncias, existem metro (m), pés (ft), milha (mi). Até para volumes, há várias opções: litro (l), galão (gal),  xícaras (xic). Dada essa introdução, faça o que se pede:
 
+    a) Procure uma forma de converter libra (lb) para quilograma (kg) e escreva um programa que converta 20lb para kg. Imprima  a resposta no console da seguinte forma: 
+    `20lb equivalem a X kg`
+*/
+//RESPOSTA: 
+let pesoEmLibra = 20
+let pesoEmKG = pesoEmLibra / 2.2046
 
+console.log(`${pesoEmLibra} lb equivalem a ${pesoEmKG} kg.`)
+
+/*
+    b) Procure uma forma de converter onça (oz) para quilograma (kg) e escreva um programa que converta 10.5oz para kg. Imprima  a resposta no console da seguinte forma: 
+    `10.5oz equivalem a X kg`
+*/
+//RESPOSTA:
+let pesoEmOz = 10.5
+pesoEmKg = pesoEmOz / 35.274
+
+console.log(`${pesoEmOz} oz equivalem a ${pesoEmKG} kg.`)
+
+/*
+    c) Procure uma forma de converter milha (mi) para metro (m) e escreva um programa que converta 100mi para m. Imprima  a resposta no console da seguinte forma: 
+    `100mi equivalem a X m`
+*/
+//RESPOSTA:
+let distanciaEmMilhas = 100
+let distanciaEmMetros = distanciaEmMilhas * 1609
+
+console.log(`${distanciaEmMilhas} mi equivalem a ${distanciaEmMetros} m.`)
+
+/*
+    d) Procure uma forma de converter pés (ft) para metro (m) e escreva um programa que converta 50ft para m. Imprima  a resposta no console da seguinte forma: 
+    `50ft equivalem a X m`
+*/
+//RESPOSTA:
+let alturaEmPes = 50
+let alturaEmMetros = alturaEmPes / 3.2808
+
+console.log(`${alturaEmPes} ft equivalem a ${alturaEmMetros.toFixed(2)} m.`)
+
+/*
+    e) Procure uma forma de converter galão (gal) para litro (l) e escreva um programa que converta 103.56gal para litro. Imprima  a resposta no console da seguinte forma: 
+    `103.56gal equivalem a X l`
+*/
+//RESPOSTA:
+let quantidadeGalao = 103.56
+let quantidadeLitros = quantidadeGalao / 0.26417
+
+console.log(`${quantidadeGalao} gal equivalem a ${quantidadeLitros.toFixed(2)} l.`)
+
+/*
+    f) Procure uma forma de converter xícara (xic) para litro (l) e escreva um programa que converta 450xic para litro. Imprima  a resposta no console da seguinte forma: 
+    `450 xic equivalem a X l`
+*/
+//RESPOSTA:
+let quantidadeXicara = 450
+quantidadeLitros = quantidadeXicara * 0.24
+
+console.log(`${quantidadeXicara} xic equivalem a ${quantidadeLitros} l.`)
+
+/*
+    g) Escolha ao menos **um** dos itens anteriores e modifique o programa para que ele peça ao usuário o valor da unidade original antes de converter
+*/
+let quantidadeXicara = prompt("Quantas xícaras de chá você bebeu hoje?")
+resultadoEmLitros = quantidadeXicara * 0.24
+
+console.log(`${quantidadeXicara} xícaras de chá são equivalentes a ${resultadoEmLitros} litros.`)
 
 
 
