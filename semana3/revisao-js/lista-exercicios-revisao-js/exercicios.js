@@ -14,11 +14,22 @@ function inverteArray(array) {
 
 }
 
-console.log(inverteOrdem(array));
+
 // EXERCÍCIO 02
 function retornaNumerosParesElevadosADois(array) {
+let numerosElevadoA2 = []
+
+  for(let i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 0){
+      numero = array[i] ** 2
+      numerosElevadoA2.push(numero)
+    }
+  }
+  array = numerosElevadoA2
+  return array
 
 }
+  
 
 // EXERCÍCIO 03
 function retornaNumerosPares(array) {
