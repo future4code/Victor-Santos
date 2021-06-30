@@ -1,0 +1,48 @@
+html {
+    background-color: black;
+    color: white;
+}
+
+.cabecalho {
+    background-color: white;
+    color: black;
+}
+
+#pagina-inicial {
+    color: purple;
+}
+
+#vendas {
+    color: purple;
+}
+
+#adicionar {
+    color: purple;
+}
+
+#funcionarios {
+    color: purple;
+}
+
+
+#img-ctrl {
+    width: 80vh;
+    height: 20vw;
+    margin-top: 10vh;
+    margin-right: 5vw;
+}
+
+#descricao {
+
+}
+
+
+
+
+
+
+
+
+
+
+

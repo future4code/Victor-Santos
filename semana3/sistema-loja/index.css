@@ -1,0 +1,68 @@
+html {
+    background-color: black;
+    color: white;
+    
+}
+
+.cabecalho {
+    background-color: white;
+    color: black;    
+}
+
+#vendas {
+    margin-right: 1vh;
+    color: purple;
+}
+
+#estoque {
+    margin: 1vh;
+    color: purple;
+}
+
+#adicionar {
+    margin: 1vh;
+    color: purple;
+}
+
+#funcionarios {
+    margin: 1vh;
+    color: purple;
+}
+
+#img-pagina-inicial {
+    width: 80%;
+    height: 50%;
+}
+
+
+.quem-somos{
+    margin-top: 8vh;
+}
+
+.rodape {
+    background-color: white;
+    color: black
+}
+
+#facebook {
+    width: 10vh;
+    height: 10vw/
+}
+
+#instagram {
+    width: 10vh;
+    height: 10vw/
+}
+
+#twitter {
+    width: 10vh;
+    height: 10vw/
+}
+
+
+
+
+
+
+
+

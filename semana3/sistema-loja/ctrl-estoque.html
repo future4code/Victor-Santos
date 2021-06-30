@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="ctrl-estoque.css">
     <title>Controle de Estoque</title>
 </head>
 <body>
-    <div>
-        <p>STAR NAVES</p>
+    <div class="cabecalho">
+        <h1>STAR NAVES</h1>
+        <a href="index.html" id="pagina-inicial">Página Inicial</a>
+        <a href="pagina-de-vendas.html" id="vendas">Produtos</a>
+        <a href="add-produto.html" id="adicionar">Adicionar Produto</a>
+        <a href="funcionarios.html" id="funcionarios">Funcionários</a>
     </div>
     
     <div>
-        <a href="index.html">Página Inicial</a>
-        <a href="ctrl-estoque.html">Controle de Estoque</a>
-        <a href="add-produto.html">Adicionar Produto</a>
-        <a href="funcionarios.html">Funcionários</a>
+
     </div>
 
     <h2>Controle de Estoque</h2>
@@ -23,37 +25,34 @@
     <table>
         <tr>
             <th>Foto</th>
-            <th>Descrição</th>
+            <th id="descricao">Descrição</th>
             <th>Preço (R$)</th>
             <th>Quantidade disponível</th>
         </tr>
 
         <tr>
-            <td><img src="./img/Millenium.png" alt="Millenium Falcon"/></td>
+            <td><img src="./img/Millenium.png" alt="Millenium Falcon" id="img-ctrl"/></td>
             <td>Millenium Falcon</td>
             <td>3500000</td>
             <td>1</td>
         </tr>
 
         <tr>
-
-            <td><img src="./img/x.png" alt="X-Wing"/></td>
+            <td><img src="./img/x.png" alt="X-Wing" id="img-ctrl"/></td>
             <td>Caça Estelar X-Wing</td>
             <td>1500000</td>
             <td>30</td>
         </tr>
 
         <tr>
-
-            <td><img src="./IMG/TIE.png" alt="TIE Fighter"/></td>
+            <td><img src="./IMG/TIE.png" alt="TIE Fighter" id="img-ctrl"/></td>
             <td>TIE Fighter Imperial</td>
             <td>1200000</td>
             <td>50</td>
         </tr>
 
         <tr>
-
-            <td><img src="./img/Destroyer.png" alt="Star Destroyer"/></td>
+            <td><img src="./img/Destroyer.png" alt="Star Destroyer" id="img-ctrl"/></td>
             <td>Star Destroyer</td>
             <td>8600000</td>
             <td>20</td>
@@ -61,8 +60,7 @@
         
         <!-- Crie mais uma linha desta tabela abaixo \/ -->
         <tr>
-
-            <td><img src="./img/Jedi.png" alt="Jedi Starfighter Delta"/></td>
+            <td><img src="./img/Jedi.png" alt="Jedi Starfighter Delta" id="img-ctrl"/></td>
             <td>Jedi Starfighter Delta</td>
             <td>5300000</td>
             <td>10</td>
