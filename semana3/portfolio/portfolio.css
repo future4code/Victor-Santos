@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*cabeçalho*/
+header {
+    padding: 1.2rem 0;
+    color: rgba(22, 168, 168, 0.932);
+    padding-left: 15px;
+}
+
+/*Primeira parte da main*/
+.resumo {
+    text-align: center;
+    padding-top: 60px;
+    padding-left: auto;
+}
+
+div h4 {
+    font-weight: inherit;
+}
+
+img {
+    padding-top: 5px;
+    width: 40vw;
+    height: 60vh;
+    border-radius: 5%;
+}
+
+/*Segunda parte da main (Sobre-Mim)*/
+.sobre-mim {
+    background-color: rgba(22, 168, 168, 0.932);
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#boas-vindas {
+    padding-top: 30px;
+}
+
+
+#texto-sobre-mim {
+    font-style: inherit;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 350px;
+    padding-right: 350px;
+    margin-bottom: 50px;
+}
+
+
+/* Formação */
+.faculdades {
+}
+
+.formacao {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.direito {
+    text-align: start;
+    padding-top: 1px;
+    padding: 80px;
+    margin-left: -20px;
+    margin-bottom: -100px;
+    
+}
+
+#img-unifieo {
+    /* display: inline; */
+    height: 60px;
+    width: 200px;
+}
+
+
+.curso-labenu {
+    text-align: start;
+    padding-top: 1px;
+    padding: 80px;
+    margin-left: -20px;
+    
+}
+
+#img-labenu {
+    width: 200px;
+    height: 80px;
+    margin-bottom: 45px;
+}
+
+
+/* projetos */
+.todos-projetos {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: ;
+    margin-bottom: 200px;
+}
+
+.projetos {
+    text-align: center;
+}
+
+.texto-projetos {
+    font-size: 5mm;
+    padding-top: 23px;
+    padding-bottom: 25px;
+    padding-left: 350px;
+    padding-right: 350px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    background-color: rgba(22, 168, 168, 0.932);
+    color: black;
+    margin-left: 80px;
+    margin-right: 80px;
+
+}
+
+/* Agência */
+.projeto-agencia {
+width: 40vw;
+height: 40vh;
+float: left;
+margin-left: 25px;
+margin-bottom: 80px;
+border: 1px solid rgba(22, 168, 168, 0.932);
+background-image: url("./img/destroyer-pag-inicial.png");
+color: rgba(22, 168, 168, 0.932);
+}
+
+projeto-agencia:hover {
+    
+}
+
+#titulo-agencia {
+margin-top: 70px;
+margin-left: 5px;
+margin-bottom: 5px;
+margin-right: 5px;
+text-align: center;
+}
+
+#texto-agencia {
+    margin: 10px 15px;
+    text-align: center;
+}
+
+
+/* Blackjack */
+
+
+.projeto-blackjack {
+display: inline-flexbox;
+width: 40vw;
+height: 40vh;
+margin-right: 25px;;
+float: right;
+border: 1px solid rgba(22, 168, 168, 0.932);
+background-image: url("./img/blackjack.png");
+background-size: 900px 250px; /*alterar o tamanho da img*/
+color: black;
+}
+
+projeto-agencia:hover {
+        
+}
+    
+#titulo-blackjack {
+    margin-top: 70px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    text-align: center;
+    }
+    
+#texto-blackjack {
+    margin: 10px 15px;
+    text-align: center;
+    font-size: 7mm;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
