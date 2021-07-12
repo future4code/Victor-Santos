@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arrayDeNumeros = [1, 4, 8, 2, 5, 4, 10, 1, 2, 4, 7, 5]
+        let numeroEscolhido = 4
+        let ocorrencia = []
+        
+        function contaOcorrencias(arrayDeNumeros, numeroEscolhido) {
+            
+  
+            for(let i = 0; i < arrayDeNumeros; i++) {
+                if(arrayDeNumeros[i] === numeroEscolhido) {
+                ocorrencia.push(arrayDeNumeros[i])
+                }
+            }
+  
+            if(ocorrencia.length > 0){
+                return "Número não encontrado"
+            } else if (ocorrencia.length === 0) {
+                return `O número ${numeroEscolhido} aparece ${ocorrencia.length}x`
+            }
+            
+        }
+        console.log(ocorrencia)
+        console.log(contaOcorrencias(arrayDeNumeros, numeroEscolhido))
+
+            // function contaOcorrencias(arrayDeNumeros, numeroEscolhido) {
+            //     let ocorrencia
+
+            //     for(let numero of arrayDeNumeros){
+            //         if(numero === numeroEscolhido) {
+            //             ocorrencia += 1
+            //         }
+            //     }
+
+            //     if (ocorrencia === 0) {
+            //         return "Número não encontrado"
+            //     } else if (ocorrencia > 0) {
+            //         let resultado = `O número ${numeroEscolhido} aparece ${ocorrencia}`
+            //         return resultado
+            //     }
+            // }
+            // console.log(contaOcorrencias(arrayDeNumeros,numeroEscolhido))
+
+            // function contaOcorrencias(arrayDeNumeros, numeroEscolhido) {
+            //     let conta = arrayDeNumeros.filter((numero) => {
+            //         numero === numeroEscolhido
+            //     })
+
+            //     if (conta.length === 0) {
+            //         return "Número não encontrado"
+            //     } else if (conta.length > 0) {
+            //         return `O número ${numeroEscolhido} aparece ${conta.length}x`
+            //     }
+            // }
+            // console.log(contaOcorrencias(arrayDeNumeros,numeroEscolhido))
+
+
+    </script>
+    
+</body>
+</html>
