@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 100px 5fr 100px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: turquoise;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#reprodutor-de-video {
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+    width: 80%;
+    border: 1px solid aqua;
+    margin: 20px;
+}
+
+#video {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: turquoise;
+}
