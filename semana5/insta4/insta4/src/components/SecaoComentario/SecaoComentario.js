@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import styled from 'styled-components'
+import { Post } from "../Post/Post"
 
 const CommentContainer = styled.div`
     display: flex;
@@ -14,18 +15,19 @@ const InputComentario = styled.input`
 
 export class SecaoComentario extends Component {
 	state = {
-
+		valorInputComentario: "",
 	}
 
-	onChangeComentario() {
-
+	onChangeComentario(event) {
+		console.log(event.target.value)
+		this.setState({valorInputComentario: event.target.value})
 	}
 
 	render() {
 		return <CommentContainer>
 			<InputComentario
 				placeholder={'Comentário'}
-				value={''}
+				value={this.state.valorInputComentario}
 				onChange={this.onChangeComentario}
 			/>
 			<button onClick={this.props.aoEnviar}>Enviar</button>

@@ -49,7 +49,18 @@ class Post extends React.Component {
   }
 
   onClickCurtida = () => {
-    console.log('Curtiu!')
+    let novoNumeroCurtidas
+
+    if(this.state.curtido) {
+      novoNumeroCurtidas = this.state.numeroCurtidas -1
+    } else {
+      novoNumeroCurtidas = this.state.numeroCurtidas + 1
+    }
+
+    this.setState({
+      curtido: !this.state.curtido,
+      numeroCurtidas: novoNumeroCurtidas
+    })
   }
 
   onClickComentario = () => {
@@ -90,9 +101,9 @@ class Post extends React.Component {
 
       <PostFooter>
         <IconeComContador
-          icone={iconeCurtida}
-          onClickIcone={this.onClickCurtida}
-          valorContador={this.state.numeroCurtidas}
+          icone={iconeCurtida} //Vem do próprio componente post, se não estiver curtido é um coração branco, se estiver curtido é um coração preto.
+          onClickIcone={this.onClickCurtida} //função para o botão, clicar no coração para curtir.
+          valorContador={this.state.numeroCurtidas} //Muda o estado do numero de curtidas.
         />
 
         <IconeComContador
