@@ -14,3 +14,5 @@ export function IconeComContador(props) {
 		<p>{props.valorContador}</p>
 	</IconContainer>
 }
+
+//Esse componente atualiza o numero de curtidas e comentários.
