@@ -4,23 +4,44 @@ import { Cadastro } from './components/Cadastro'
 import { ListaUsers } from './components/ListaUsers'
 
 export class App extends React.Component {
+  // Alternar entre as telas (cadastro e lista de usuários)
+  // Quando eu tenho duas telas e quero alternar entre elas, utiliza a renderização condicional
+  // Primeiro passo é criar um estado para essa renderização
   state = {
-    pagina: false,
+    telaAtual: "cadastro",
   }
 
-  onClickLista = () => {
-    
+  escolheTela = () => {
+    switch (this.state.telaAtual) {
+      case "cadastro":
+        return <Cadastro irParaLista={this.irParaLista}/>
+      case "lista":
+        return <ListaUsers irParaCadastro={this.irParaCadastro}/>
+      default:
+        return <div>Erro! Página não encontrada</div>
+    }
   }
+
+  // Definindo a alternancia de telas.
+  //Para definir uma alteração de telas eu dependo da minha propriedade no estado que antes estavamos mudando manualmente.
+  irParaCadastro = () => {
+    this.setState({telaAtual: "cadastro"})
+  }
+
+  irParaLista = () => {
+    this.setState({telaAtual: "lista"})
+  }
+
 
   render() {
     return (
       <div>
-        <Cadastro />
-        <button>
-          Mostrar lista
-        </button>
+        
+          <h1>Tela Inicial</h1>
 
-        <ListaUsers />
+        {this.escolheTela()}
+
+        
       </div>
     )
   }
