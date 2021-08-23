@@ -8,6 +8,8 @@ import { useHistory } from 'react-router-dom'
 import { goToListTripsPage } from '../route/coordinator'
 import { countries } from '../constants/countries'
 
+// Aplicar Styled Components
+
 const ApplicationFormPage = () => {
     const [tripId, setTripId] = useState("")
     const { form, onChange, clear } = useForm({name: "", age: "", application: "", profession: "", country:""})
