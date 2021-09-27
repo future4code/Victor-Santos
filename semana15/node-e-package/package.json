@@ -1,0 +1,13 @@
+{
+  "name": "e-package",
+  "version": "1.0.0",
+  "description": "Exerícios aula 40 - Node.js e package.json",
+  "main": "index.js",
+  "scripts": {
+    "exercicio1": "node Exercicio4/Exercicio1/index.js",
+    "exercicio2": "node Exercicio4/Exercicio2/index.js",
+    "exercicio3": "node Exercicio4/Exercicio3/index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
