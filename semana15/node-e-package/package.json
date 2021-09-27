@@ -9,5 +9,8 @@
     "exercicio3": "node Exercicio4/Exercicio3/index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
 }
