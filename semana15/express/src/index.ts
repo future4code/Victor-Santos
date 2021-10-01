@@ -113,14 +113,23 @@ app.get("/paises/search", (req: Request, res: Response) => {
 
 app.put("/paises/:id", (req: Request, res: Response) => {
     try {
-        if (!Number(req.params.id)) {
+        if (!Number(req.params.id) && Number(req.params.id) !== 0) {
             throw new Error("Favor informar o numero de id")
         }
 
-
-
-
-
+        const country = countries.filter((country) => {
+            return country.id === Number(req.params.id)
+        }).map((country) => {
+            return {id: country.id, name: req.body.name, capital: req.body.capital, continent: country.continent}
+        })
+        console.log(country)
+        
+    // if (country) {
+        res.send(country)
+    // } else {
+    //     throw new Error("Alterações incompletas")
+    // }
+    
     } catch (error: any) {
         res.send(error.message)
     }
