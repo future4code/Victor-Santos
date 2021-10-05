@@ -1,4 +1,4 @@
-import express, {request, Request, Response} from 'express'
+import express, {Request, Response} from 'express'
 import cors from 'cors'
 import {countries} from './data'
 import {country} from './types'
@@ -111,7 +111,7 @@ app.get("/paises/search", (req: Request, res: Response) => {
 
 //Exercício 04 - Editar País
 
-app.put("/paises/:id", (req: Request, res: Response) => {
+app.post("/paises/:id", (req: Request, res: Response) => {
     try {
         if (!Number(req.params.id) && Number(req.params.id) !== 0) {
             throw new Error("Favor informar o numero de id")
